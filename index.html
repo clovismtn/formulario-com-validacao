@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <title>Formulario com validação</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div class="texto">
+            <h1>FICOU COM DÚVIDA? NOS MANDE UMA MENSAGEM!</h1>
+            <h2>caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de
+                24h.
+            </h2>
+        </div>
+        <form id="campos" class="campos">
+                <div>
+                    <input type="text" placeholder="Nome completo*" class="inputs" oninput="nameValidate()">
+                    <span class="span-required">campo obrigatório</span>
+                </div>
+                <div>
+                    <input type="email" placeholder="Email*" class="inputs" oninput="emailValidate()">
+                    <span class="span-required">campo obrigatório</span>
+                </div>
+                <div>
+                    <input type="tel" placeholder="Telefone*" class="inputs" oninput="telValidate()">
+                    <span class="span-required">campo obrigatório</span>
+                </div>
+                <div>
+                    <textarea name="mensagem" id="mensagem" class="inputs" placeholder="Mensagem*" oninput="textValidate()" rows=""></textarea>
+                    <span class="span-required">campo obrigatório</span>
+                </div>
+                <div><p class="p">*campos obrigatórios</p></div>
+                <input class="enviar" type="submit" name="enviar" id="enviar">
+        </form>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>

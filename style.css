@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto" , sans-serif;
+}
+
+main{
+    display: flex;
+    background-image: url(./src/bg-repeat.jpg);
+    background-repeat: repeat-x;
+    background-size: contain;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto{
+    color: white;
+    padding-left: 50px;
+    padding-right: 60px;
+}
+
+.texto h1{
+    width: 300px;
+    font-size: 20px;
+    font-weight: 900;
+    padding-bottom: 11px;
+}
+
+.texto h2{
+    width: 300px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 340px;
+    height: 378px;
+    background-color: white;
+}
+
+.inputs{
+    padding-left: 10px;
+    width: 298px;
+    height: 35px;
+    border-radius: 5px;
+    border-width: 1px;
+    margin-top: 15px;
+}
+
+textarea{
+    resize: none;
+    text-wrap: wrap;
+    margin-top: 15px;
+    border-width: 1px;
+    border-radius: 5px;
+    padding-left: 10px;
+    width: 298px;
+    min-height: 100px;
+}
+
+.span-required{
+    position: absolute;
+    display: none;
+    font-size: 8px;
+    font-weight: 400;
+    color: #F52E2E;
+}
+
+.p{
+    display: flex;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    width: 300px;
+    padding-top: 10px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.enviar{
+    margin-top: 15px;
+    width: 298px;
+    height: 41px;
+    background-color: #3CCC87;
+    border-width: 0;
+    border-radius: 5px;
+    color: white;
+}
+
+::-webkit-input-placeholder  { color: #A8A8A8;
+    ; }
+input:-moz-placeholder { color: #A8A8A8;
+    ; }
+textarea:-moz-placeholder { color:#A8A8A8;
+    ; }
+
+@media (max-width: 750px){
+    main{
+        flex-direction: column;
+    }
+
+    .texto{
+        margin-bottom: 50px;
+    }
+}
+
+@media (min-width:1300px ){
+    .texto h1{
+        font-size: 30px;
+        width: 450px;
+    }
+
+    .texto h2{
+        font-size: 23px;
+        width: 450px;
+    }
+}
